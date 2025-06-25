@@ -48,7 +48,7 @@ const {
   const callHandler = require('./lib/callhandler');
   // ------------------------------------------
 
-  const ownerNumber = ['254732297194']
+  const ownerNumber = [255760003443']
 
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -72,7 +72,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("POPKID;;;", '');
+const sessdata = config.SESSION_ID.replace("POPKID;;;WQsUFRxD#WGE4FHmYw3JTtd3QX6BXlgJnFx1Ex1fGDZhdh2jv0fg", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
